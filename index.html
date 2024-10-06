@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>構造式ガチャ</title>
+  <meta name="description" content="構造式ガチャで高校化学の構造式をマスターしよう！" />
+  <meta name="keywords" content="構造式ガチャ, 構造式, ガチャ, 化学, 高校化学" />
+  <meta name="author" content="Daiki Nomura" />
+  <meta name="og:title" content="構造式ガチャ" />
+  <meta name="og:description" content="構造式ガチャで高校化学の構造式をマスターしよう！" />
+  <meta name="og:type" content="website" />
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/src/main.tsx"></script>
+</body>
+
+<footer
+  style="max-height: 8vh;text-align: center; margin-top: 20px;font-size: 0.8em; color: #666;position: fixed; bottom: 0; width: 100%;font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;">
+  <a href="https://github.com/DaikiNom/structure_gacha">GitHub</a>
+  <p>内容の誤りやバグの報告については，
+    <script type="text/javascript">
+      function converter(M) {
+        var str = "", str_as = "";
+        for (var i = 0; i < M.length; i++) {
+          str_as = M.charCodeAt(i);
+          str += String.fromCharCode(str_as + 1);
+        }
+        return str;
+      }
+      function mail_to(k_1, k_2) {
+        eval(String.fromCharCode(108, 111, 99, 97, 116, 105, 111, 110, 46, 104, 114, 101, 102, 32,
+          61, 32, 39, 109, 97, 105, 108, 116, 111, 58)
+          + escape(k_1) +
+          converter(String.fromCharCode(98, 110, 109, 115, 96, 98, 115, 63, 99, 96, 104, 106, 104, 109, 110, 108, 116, 113, 96, 45, 115, 100, 98, 103,
+            62, 114, 116, 97, 105, 100, 98, 115, 60))
+          + escape(k_2) + "'");
+      }
+      document.write('<a href=JavaScript:mail_to("","")>こちら<\/a>');
+    </script>までご連絡ください
+  </p>
+</footer>
+
+</html>

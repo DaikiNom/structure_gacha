@@ -1,0 +1,107 @@
+#root {
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+}
+
+.App {
+  width: 100dvw;
+  height: 100dvh;
+  background: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @supports not (width: 100dvw) {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: #333;
+    color: #fff;
+  }
+}
+
+.card {
+  border-radius: 35px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 30px #b7b7b7,
+    -20px -20px 30px #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 85svh;
+  max-width: 85svw;
+  min-height: min(20svh, 20svw);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @supports not (max-height: 85svh) {
+    max-height: 85vh;
+    max-width: 85vw;
+    min-height: min(20vh, 20vw);
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: #505050;
+    box-shadow: 20px 20px 30px #000,
+      -20px -20px 30px #555;
+    color: #fff;
+  }
+}
+
+.question {
+  margin: 30px;
+  font-size: 3em;
+}
+
+.answer {
+  padding: 10px;
+  font-size: 1.2em;
+}
+
+.ansImg {
+  object-fit: contain;
+  max-height: 70svh;
+  max-width: 70svw;
+  min-height: min(20svh, 20svw);
+
+  @supports not (max-height: 70svh) {
+    max-height: 70vh;
+    max-width: 70vw;
+    min-height: min(20vh, 20vw);
+  }
+}
+
+.change {
+  border-radius: 50%;
+  width: 7em;
+  height: 7em;
+  background: linear-gradient(145deg, #f0f0f0, #cacaca);
+  box-shadow: 13px 13px 25px #929292,
+    -13px -13px 25px #ffffff;
+  padding: 10px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: linear-gradient(145deg, #333, #555);
+    box-shadow: 13px 13px 25px #000,
+      -13px -13px 25px #555;
+    color: #fff;
+
+  }
+}
+
+.change:active {
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+
+  @media screen and (prefers-color-scheme: dark) {
+    background: linear-gradient(145deg, #555, #333);
+
+  }
+}
